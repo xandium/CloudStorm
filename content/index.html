@@ -1,0 +1,39 @@
+<h1 id="cloudstorm">CloudStorm</h1>
+<hr />
+<h2 id="a-minimal-discord-gateway-library">A minimal discord gateway library</h2>
+<p>Part of the WeatherStack</p>
+<p>CloudStorm is a small library specially made to <strong>only</strong> cover the Gateway area of the discord api.</p>
+<p>It makes no assumptions about the rest of your stack, therefore you can use it anywhere as long as you use node 8 or higher.</p>
+<h3 id="some-of-the-things-that-make-cloudstorm-awesome-">Some of the things that make CloudStorm awesome:</h3>
+<ul>
+<li>Standalone discord gateway connection</li>
+<li>zlib-stream, etf and json support</li>
+<li>Well documented</li>
+</ul>
+<h3 id="gotchas-with-cloudstorm-">Gotchas with CloudStorm:</h3>
+<p>You may wonder how you you are able to get the id of a shard where an event originated from, but don&#39;t fear, CloudStorm helps you with that by adding a <code>shard_id</code> property to the events that are forwarded.</p>
+<p>So an event you receive may look like this:</p>
+<pre><code class="lang-json">{
+  &quot;op&quot;:0,
+  &quot;t&quot;:&quot;PRESENCE_UPDATE&quot;,
+  &quot;s&quot;:1337,
+  &quot;shard_id&quot;:0,
+  &quot;d&quot;: {
+    &quot;game&quot;: null,
+    &quot;guild_id&quot;: &quot;id&quot;,
+    &quot;nick&quot;: null,
+    &quot;roles&quot;: [],
+    &quot;status&quot;: &quot;offline&quot;,
+    &quot;user&quot;: { 
+     &quot;id&quot;: &quot;id&quot;
+    } 
+  }
+}
+</code></pre>
+<h4 id="microservice-bots-">Microservice Bots:</h4>
+<p>I&#39;ve written a general whitepaper on the idea of microservice bots, which you can find on gist: <a href="https://gist.github.com/DasWolke/c9d7dfe6a78445011162a12abd32091d">Microservice Bot Whitepaper</a></p>
+<h4 id="documentation-">Documentation:</h4>
+<p>You can find the docs at <a href="https://daswolke.github.io/CloudStorm/">https://daswolke.github.io/CloudStorm/</a></p>
+<h4 id="installation-">Installation:</h4>
+<p>To install CloudStorm, make sure that you have node 8 or higher and npm installed on your computer.</p>
+<p>Then run the following command in a terminal <code>npm install cloudstorm</code></p>
