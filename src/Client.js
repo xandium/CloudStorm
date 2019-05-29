@@ -55,7 +55,7 @@ class Client extends EventEmitter {
     this.options.token = token;
     this.shardManager = new ShardManager(this);
     this.version = version;
-    this._restClient = new SnowTransfer(token);
+    this._restClient = new SnowTransfer(token, this.options);
   }
 
   /**
