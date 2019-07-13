@@ -10,10 +10,13 @@
     "build:docs": "node_modules/.bin/docma -c docma.config.json"
   },
   "author": "wolke <wolke@weeb.sh>",
+  "contributors": [
+    "Sharon Williams <swilliams@xandium.io> (https://xandium.io)"
+  ],
   "license": "MIT",
   "dependencies": {
-    "@xandium/snowtransfer": "^0.2.1",
-    "@xandium/stargear": "^0.2.0",
+    "@xandium/snowtransfer": "git+ssh://git@github.com/xandium/snowtransfer",
+    "@xandium/stargear": "git+ssh://git@github.com/xandium/stargear",
     "ws": "^3.1.0",
     "zlib-sync": "^0.1.3"
   },
