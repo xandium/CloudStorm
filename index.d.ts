@@ -179,7 +179,7 @@ declare module "Cloudstorm" {
         protected statusUpdate(data?: IPresence): void;
         protected shardStatusUpdate(shardId: number, data?: IPresence): void;
         protected voiceStateUpdate(shardId: number, data: IVoiceStateUpdate): Promise<void>;
-        protected requestGuildMembers(shardId: number, data: IRequestGuildMembers): Promise<void>:
+        protected requestGuildMembers(shardId: number, data: IRequestGuildMembers): Promise<void>;
     }
 
     export class Client extends EventEmitter { // TODO: add events
