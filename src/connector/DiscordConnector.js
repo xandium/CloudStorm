@@ -98,7 +98,8 @@ class DiscordConnector extends EventEmitter {
    * @protected
    */
   disconnect() {
-    return this.betterWs.close(1000, "Disconnect from User");
+    if (this.betterWs != null)
+      return this.betterWs.close(1000, "Disconnect from User");
   }
 
   /**
