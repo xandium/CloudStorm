@@ -238,7 +238,8 @@ class DiscordConnector extends EventEmitter {
    * @protected
    */
   heartbeat() {
-    this.betterWs.sendMessage({ op: OP.HEARTBEAT, d: this.seq });
+    if (this.betterWs != null)
+      this.betterWs.sendMessage({ op: OP.HEARTBEAT, d: this.seq });
   }
 
   /**
