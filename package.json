@@ -15,8 +15,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@xandium/snowtransfer": "git+ssh://git@github.com/xandium/snowtransfer",
-    "@xandium/stargear": "git+ssh://git@github.com/xandium/stargear",
+    "@xandium/snowtransfer": "git+https://git@github.com/xandium/snowtransfer",
+    "@xandium/stargear": "git+https://git@github.com/xandium/stargear",
     "ws": "^3.1.0",
     "zlib-sync": "^0.1.3"
   },
